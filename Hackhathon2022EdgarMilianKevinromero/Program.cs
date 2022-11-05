@@ -7,7 +7,6 @@ namespace Hackhathon2022EdgarMilianKevinromero
     {
         static void Main(string[] args)
         {
-<<<<<<< Updated upstream
             bool terminarPrograma = false;
             string opcion = "";
             Programas programas = new Programas();
@@ -16,6 +15,7 @@ namespace Hackhathon2022EdgarMilianKevinromero
 
                 Console.WriteLine("Ingrese el numero del problema a resolver de lo contrario se cerrara el programa");
                 Console.WriteLine("1. Primer Problema");
+                Console.WriteLine("2. Segundo Problema");
                 Console.WriteLine("3. Tercer Problema");
                 Console.WriteLine("4. Cuarto Problema");
 
@@ -29,6 +29,13 @@ namespace Hackhathon2022EdgarMilianKevinromero
                         string p1c = Console.ReadLine();
                         string p1c2 = Console.ReadLine();
                         programas.Problema1(p1c, p1c2);
+                        break;
+                    case "2":
+                            TextJustifier text = new TextJustifier();
+                            var test = "Hola fulanito como estas hoy";
+                            var send = test.Split(' ');
+                            Console.WriteLine(text.Justifier(send, 16));
+                            Console.ReadLine();
                         break;
                     case "3":
                         Console.WriteLine("Ingrese dos cadenas");
@@ -51,18 +58,7 @@ namespace Hackhathon2022EdgarMilianKevinromero
             };
 
 
-            //programas.Problema1("Hola", "oaHl");
-
-            //programas.problema4("10", "5", "5");
-
-
-=======
-            TextJustifier text = new TextJustifier();
-            var test = "Hola fulanito como estas hoy";
-            var send = test.Split(' ');
-            Console.WriteLine(text.Justifier(send,16));
-            Console.ReadLine();
->>>>>>> Stashed changes
+            
         }
     }
 }
