@@ -38,11 +38,12 @@ namespace Hackhathon2022EdgarMilianKevinromero
         public string Problema3(string c1, string c2)
         {
             char[] caracteres = c1.ToCharArray();
+            char[] caracteres2 = c2.ToCharArray();
             string resultado = "";
 
             for (int i = 0; i < caracteres.Length; i++)
             {
-                if (c2.Contains(caracteres[i]) && resultado.Contains(caracteres[i])== false)
+                if (caracteres[i] == caracteres2[i])
                 {
                     resultado = resultado + caracteres[i];
                 }
