@@ -34,7 +34,7 @@ namespace Hackhathon2022EdgarMilianKevinromero
 
         }
 
-        public string problema4(string total, string primernumero, string segundonumero)
+        public string Problema4(string total, string primernumero, string segundonumero)
         {
             int totalint = Convert.ToInt32(total);
             int primernumeroint = Convert.ToInt32(primernumero);
@@ -73,11 +73,6 @@ namespace Hackhathon2022EdgarMilianKevinromero
             Console.WriteLine(Convert.ToString(respuesta) + " avellanas");
 
             return Convert.ToString(respuesta) + " avellanas";
-
-
-
-
-
 
         }
     }
