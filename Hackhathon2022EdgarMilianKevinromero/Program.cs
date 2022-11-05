@@ -9,7 +9,9 @@ namespace Hackhathon2022EdgarMilianKevinromero
 
             Programas programas = new Programas();
 
-            programas.Problema1("Hola", "oaHl");
+            //programas.Problema1("Hola", "oaHl");
+
+            programas.problema4("7", "4", "3");
         }
     }
 }
