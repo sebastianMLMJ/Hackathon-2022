@@ -6,7 +6,10 @@ namespace Hackhathon2022EdgarMilianKevinromero
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Programas programas = new Programas();
+
+            programas.Problema1("Hola", "oaHl");
         }
     }
 }
