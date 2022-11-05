@@ -14,6 +14,7 @@ namespace Hackhathon2022EdgarMilianKevinromero
 
                 Console.WriteLine("Ingrese el numero del problema a resolver de lo contrario se cerrara el programa");
                 Console.WriteLine("1. Primer Problema");
+                Console.WriteLine("3. Tercer Problema");
                 Console.WriteLine("4. Cuarto Problema");
 
                
@@ -26,6 +27,12 @@ namespace Hackhathon2022EdgarMilianKevinromero
                         string p1c = Console.ReadLine();
                         string p1c2 = Console.ReadLine();
                         programas.Problema1(p1c, p1c2);
+                        break;
+                    case "3":
+                        Console.WriteLine("Ingrese dos cadenas");
+                        string p3c = Console.ReadLine();
+                        string p3c2 = Console.ReadLine();
+                        programas.Problema3(p3c, p3c2);
                         break;
                     case "4":
                         Console.WriteLine("Ingrese tres numeros, primero el total, luego dos que deben sumar el valor del primer numero");

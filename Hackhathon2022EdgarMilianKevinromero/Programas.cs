@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace Hackhathon2022EdgarMilianKevinromero
 {
     internal class Programas
     {
-        public bool Problema1 (string cadenaOriginal, string cadenaComparar)
+        public bool Problema1(string cadenaOriginal, string cadenaComparar)
         {
 
-            char [] caracteres = cadenaOriginal.ToCharArray();
-            char [] caracteres2 = cadenaComparar.ToCharArray();
+            char[] caracteres = cadenaOriginal.ToCharArray();
+            char[] caracteres2 = cadenaComparar.ToCharArray();
             int cantCoincidencias = 0;
 
             for (int i = 0; i < caracteres.Length; i++)
@@ -21,7 +22,7 @@ namespace Hackhathon2022EdgarMilianKevinromero
                 }
             }
 
-            if (cantCoincidencias==caracteres.Length && caracteres.Length==caracteres2.Length)
+            if (cantCoincidencias == caracteres.Length && caracteres.Length == caracteres2.Length)
             {
                 Console.WriteLine("Verdadero");
                 return true;
@@ -33,6 +34,24 @@ namespace Hackhathon2022EdgarMilianKevinromero
             }
 
         }
+
+        public string Problema3(string c1, string c2)
+        {
+            char[] caracteres = c1.ToCharArray();
+            string resultado = "";
+
+            for (int i = 0; i < caracteres.Length; i++)
+            {
+                if (c2.Contains(caracteres[i]) && resultado.Contains(caracteres[i])== false)
+                {
+                    resultado = resultado + caracteres[i];
+                }
+            }
+            Console.WriteLine(resultado);
+            return resultado;
+        }
+
+       
 
         public string Problema4(string total, string primernumero, string segundonumero)
         {
