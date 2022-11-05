@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Hackhathon2022EdgarMilianKevinromero
 {
@@ -6,6 +7,7 @@ namespace Hackhathon2022EdgarMilianKevinromero
     {
         static void Main(string[] args)
         {
+<<<<<<< Updated upstream
             bool terminarPrograma = false;
             string opcion = "";
             Programas programas = new Programas();
@@ -54,6 +56,13 @@ namespace Hackhathon2022EdgarMilianKevinromero
             //programas.problema4("10", "5", "5");
 
 
+=======
+            TextJustifier text = new TextJustifier();
+            var test = "Hola fulanito como estas hoy";
+            var send = test.Split(' ');
+            Console.WriteLine(text.Justifier(send,16));
+            Console.ReadLine();
+>>>>>>> Stashed changes
         }
     }
 }
